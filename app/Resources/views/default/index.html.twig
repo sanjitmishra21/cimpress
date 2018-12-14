@@ -5,9 +5,9 @@
         <div id="container">
 		<h1>Symfony Repositories</h1>
 		<table width="100%" border="1">
-			<tr><td>SR No.</td><td>Api Name</td></tr>
+			<tr><td>SR No.</td><td>Api Name</td><td>Decription</td><td>Url</td></tr>
 		      {% for key, value in apiAraray %}
-				<tr><td>{{ loop.index }}</td><td> {{ value.name }}</td></tr>
+				<tr><td>{{ loop.index }}</td><td> {{ value.name }}</td><td> {{ value.description }}</td><td> {{ value.url }}</td></tr>
 			  {% endfor %}
          </table>  
            

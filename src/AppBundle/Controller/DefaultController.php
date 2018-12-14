@@ -16,7 +16,8 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
 		$client = new \Github\Client();
 		$repositories = $client->api('user')->repositories('symfony');
-		
+		//echo "<pre>";
+		//print_r($repositories);die;
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,'apiAraray'=>$repositories
         ]);
